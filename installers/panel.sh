@@ -39,30 +39,30 @@ fi
 # ------------------ Variables ----------------- #
 
 # Domain name / IP
-FQDN="${FQDN:-localhost}"
+FQDN="panel.namnamstore.my.id"
 
 # Default MySQL credentials
-MYSQL_DB="${MYSQL_DB:-panel}"
-MYSQL_USER="${MYSQL_USER:-pterodactyl}"
+MYSQL_DB="panel"
+MYSQL_USER="pterodactyl"
 MYSQL_PASSWORD="${MYSQL_PASSWORD:-$(gen_passwd 64)}"
 
 # Environment
-timezone="${timezone:-Europe/Stockholm}"
+timezone="Asia/Jakarta"
 
 # Assume SSL, will fetch different config if true
-ASSUME_SSL="${ASSUME_SSL:-false}"
-CONFIGURE_LETSENCRYPT="${CONFIGURE_LETSENCRYPT:-false}"
+ASSUME_SSL="true"
+CONFIGURE_LETSENCRYPT="true"
 
 # Firewall
-CONFIGURE_FIREWALL="${CONFIGURE_FIREWALL:-false}"
+CONFIGURE_FIREWALL="true"
 
 # Must be assigned to work, no default values
-email="${email:-}"
-user_email="${user_email:-}"
-user_username="${user_username:-}"
-user_firstname="${user_firstname:-}"
-user_lastname="${user_lastname:-}"
-user_password="${user_password:-}"
+email="raff66info@gmail.com"
+user_email="admin@admin.com"
+user_username="admin"
+user_firstname="Admin"
+user_lastname="Panel"
+user_password="password_admin"
 
 if [[ -z "${email}" ]]; then
   error "Email is required"
